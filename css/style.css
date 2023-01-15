@@ -1,0 +1,13 @@
+header,section{
+    border: 1px dashed black;
+}
+
+[class*="row"]{
+    min-height: 80px;
+    border: 1px dashed orange;
+}
+
+[class*="col"], section>*{
+    min-height: 80px;
+    border: 1px dashed lime;
+}
