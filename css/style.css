@@ -1,13 +1,17 @@
 header,section{
-    border: 1px dashed black;
+    border: 1px dashed lime;
 }
 
 [class*="row"]{
     min-height: 80px;
-    border: 1px dashed orange;
+    border: 1px dashed blue;
 }
 
 [class*="col"], section>*{
     min-height: 80px;
-    border: 1px dashed lime;
+    border: 1px dashed red;
+}
+
+.col{
+    min-width: 400px;
 }
