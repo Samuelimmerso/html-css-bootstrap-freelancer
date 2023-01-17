@@ -1,5 +1,24 @@
-header,section{
-    border: 1px dashed lime;
+/* GENERICS */
+.separator{
+    width: 150px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: white;
+}
+
+.separator:first-child{
+    margin-right: 1rem;
+}
+
+.separator:last-child{
+    margin-left: 1rem;
+}
+
+
+/* header */
+
+header, .nav-link{
+    color: white;
 }
 
 [class*="row"]{
@@ -8,10 +27,40 @@ header,section{
 }
 
 [class*="col"], section>*{
-    min-height: 80px;
-    border: 1px dashed red;
 }
 
 .col{
     min-width: 400px;
 }
+
+/* main */
+
+.jumbotron{
+    color: white;
+}
+
+.jumbotron img{
+    min-width: 200px;
+    min-height: 200px;
+}
+
+
+/* portfolio */
+
+.portfolio-container .box.separator{
+    background-color: black;
+}
+
+/* about */
+
+.about{
+    color: white;
+}
+
+.about .separator{
+    background-color: white;
+}
+
+
+
+
