@@ -14,51 +14,103 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-auto">Logo</div>
-                <div class="col-auto">link link link</div>
+            <div class="navbar justify-content-between ">
+                <div class="col-auto d-flex align-items-center"><h2>START BOOTSTRAP</h2></div>
+                <div class="col-auto d-flex align-items-center">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                      </ul>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="container d-flex flex-column align-items-center">
-            <div class="box-img">img</div>
+        <section class="container d-flex flex-column align-items-center bg-success jumbotron p-5">
+            <div class="box-img">
+                <figure class="figure">
+                    <img src="./img/avatar.svg" class="figure-img img-fluid rounded" alt="">
+                  </figure>
+            </div>
             <h1>START BOOTSTRAP</h1>
-            <div class="box">BR</div>
-            <p>link link link</p>
+            <div class="separator-container d-flex justify-content-between align-items-center">
+                <div class="box separator"></div>
+                <p>&star;</p>
+                <div class="box separator"></div>
+            </div>
+            <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
         </section>
 
-        <section class="container d-flex flex-column align-items-center">
+        <section class="portfolio-container d-flex flex-column align-items-center">
             <h1>PORTFOLIO</h1>
-            <div>BR</div>
+            <div class="separator-container d-flex justify-content-between align-items-center">
+                <div class="box separator"></div>
+                <p>&star;</p>
+                <div class="box separator"></div>
+            </div>
 
-            <div class="container ">
+            <div class="container">
                 <div class="row">
-                    <div class="col-4">img</div>
-                    <div class="col-4">img</div>
-                    <div class="col-4">img</div>
+                    <div class="col-4">
+                        <figure class="figure">
+                            <img src="./img/cabin.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-4">
+                        <figure class="figure">
+                            <img src="./img/cake.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-4">
+                        <figure class="figure">
+                            <img src="./img/circus.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                    </div>
                 </div>
                 <div class="row gy-3">
-                    <div class="col-4">img</div>
-                    <div class="col-4">img</div>
-                    <div class="col-4">img</div>
+                    <div class="col-4">
+                        <figure class="figure">
+                            <img src="./img/game.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-4">
+                        <figure class="figure">
+                            <img src="./img/safe.png" class="figure-img img-fluid rounded" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-4">
+                        <figure class="figure">
+                            <img src="./img/submarine.png" class="figure-img img-fluid rounded" alt="">
+                          </figure>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="about d-flex flex-column">
-            <div class="container d-flex flex-column text-center">
+        <section class="about d-flex flex-column bg-success p-5">
+            <div class="container d-flex flex-column align-items-center justify-content-center gy-3">
                 <h1>ABOUT</h1>
-                <div>BR</div>
+                <div class="separator-container d-flex align-items-center">
+                    <div class="box separator"></div>
+                    <p>&star;</p>
+                    <div class="box separator"></div>
+                </div>
             </div>
 
             <div class="container">
                 <div class="row gap-3 justify-content-center">
-                    <div class="col-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur necessitatibus, est autem nobis assumenda? Illo amet maxime suscipit aperiam.</div>
-                    <div class="col-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facilis laudantium exercitationem tempora enim quidem ea id maxime fuga hic.</div>
+                    <div class="col-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur praesentium perferendis dicta aut accusamus aperiam dignissimos porro aliquid ut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur necessitatibus, est autem nobis assumenda? Illo amet maxime suscipit aperiam.</div>
+                    <div class="col-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque blanditiis consequatur odio saepe mollitia ab possimus ipsa hic nemo? Illo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facilis laudantium exercitationem tempora enim quidem ea id maxime fuga hic.</div>
                 </div>
             </div>
         </section>
@@ -66,14 +118,26 @@
         <section class="container contact">
             <div class="container d-flex flex-column text-center">
                 <h1>contact me</h1>
-                <div>BR</div>
+                <div class="separator-container d-flex justify-content-between align-items-center">
+                    <div class="box separator"></div>
+                    <p>&star;</p>
+                    <div class="box separator"></div>
+                </div>
             </div>
 
             <div class="container d-flex flex-column">
-                <div class="col">name</div>
-                <div class="col">email</div>
-                <div class="col">phone</div>
-                <div class="col">message</div>
+                <div class="col">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="col">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="col">
+                    <input type="number" placeholder="Phone">
+                </div>
+                <div class="col">
+                    <textarea name="Message" id="" cols="30" rows="100 " placeholder="Message"></textarea>
+                </div>
                 <div class="col">send</div>
             </div>
         </section>
